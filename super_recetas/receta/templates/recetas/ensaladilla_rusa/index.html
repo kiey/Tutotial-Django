@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+<meta charset="UTF-8">
+<title>Ensaladilla Rusa Ganadora de España</title>
+<style>
+body {background-color: seashell;}
+h1{color:navy;}
+h2 {color: lightsalmon;}
+h3 {color:olivedrab;}
+p {color: black;}
+</style>
+</head>
+
+<body>
+<h1>Ensaladilla Rusa premium</h1>
+<p>El congreso San Sebastián Gastronomika, en su apartado Gastronomika Popular, fue el escenario en el que se celebró la primera edición del Concurso Nacional de <a href="https://es.wikipedia.org/wiki/Ensalada_rusa">Ensaladilla Rusa </a>San Miguel. Se presentaron restaurantes de toda España y la ganadora fue la ensaladilla del barcelonés Tapas 24 de Carles Abellán.</p> 
+
+<p>Pues bien, hemos tenido acceso a la receta exacta de ésta, la mejor ensaladilla rusa del país, de la mano del propio Abellán, y te la ofrecemos con todo lujo de detalles. Así que toma nota.</p>
+{% load static %}
+<img src="{% static "ensaladilla.jpeg" %}">
+
+
+<h2><blockquote>Ingredientes para la ensaladilla</blockquote></h2>
+<ul>
+	<li>720 gramos de zanahoria en manojo (cocida)</li>
+	<li>2800 gramos de patata monalisa mediana (cocida)</li>
+	<li>360 gramos de <a href="https://es.wikipedia.org/wiki/Gordal">aceituna gordal</a></li>
+	<li>720 gramos de <a href="http://galica.es/atunes">atún en lata Galica</a></li>
+	<li>300 gramos de <a href="https://www.conservaslolin.es/comprar-anchoas-del-cantabrico/">Anchoa Lolín </a> (limpia)</li>
+</ul>
+
+<p><b><h3><blockquote>Paso a paso para la ensaladilla</blockquote></h3></b></p>
+<ul>
+	<li>Cocemos la patata entera con piel, al horno de vapor 100%, 45 minutos aproximadamente.</li>
+	<li>Pelamos las zanahorias de manojo y cocemos igual al horno de vapor 100%, 35 minutos.</li>
+	<li>Mientrastanto, podemos ir picando la aceituna y la anchoa, bien picadas</li>
+	<li>Desmenuzamos el atún de lata.</li>
+	<li>Una vez cocida la patata y la zanahoria, lo picamos bien pequeñito también y lo juntamos todo.</li>
+</ul>
+
+<p><b><h2><blockquote>Ingredientes para la mayonesa</blockquote></h2></b></p>
+<ul>
+	<li>100 gramos de agua de aceituna gordal</li>
+	<li>½ diente de ajo</li>
+	<li>1225 gramos de aceite de girasol</li>
+	<li>10 gramos de aceite de anchoa</li>
+	<li>12 gramos de sal</li>
+	<li>300 gramos de aceite de atún</li>
+	<li>300 gramos de huevo pasteurizado</li>
+	<li>25 gramos de aceite de <a href="https://mallafre.com/es/26-nuestros-aceites">oliva Mallafré </a></li>
+	
+</ul>
+
+<p><b><h3><blockquote>Paso a paso para la mayonesa</blockquote></h3></b></p>
+<ul>
+	<li>Ponemos el huevo con el ajo y la sal y trituramos todo junto y colamos.</li>
+	<li>Juntamos el resto de ingredientes y lo montamos con el Túrmix añadiendo poco a poco los aceites y montando como una mayonesa tradicional.</li>
+</ul>
+
+<p><b><h3><blockquote>Paso a paso para la mezcla</blockquote></h3></b></p>
+<ul>
+	<li>Mezclamos todo el conjunto bien (si están un poco calientes las verduras, mejor).</li>
+	<li>Si se va consumir a corto plazo le bajamos un poco la temperatura en nevera, pero debe consumirse a temperatura ambiente, nunca fría.</li>
+	
+	
+</body>
+{% endblock content %}

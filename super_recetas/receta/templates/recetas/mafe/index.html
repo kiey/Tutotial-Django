@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+
+<h1> le Mafe</h1>
+</head>
+<body>
+
+<b>el mafe</b> es un plato senegales  a base de mantequilla de cacahuete.<br>
+su sabor es unico y <mark>original</mark>.<br>
+
+<h2><p><font color="red">Ingredientes</font></p></h2>
+<p><font color="blue">Porcion para 5 personas</font></p>
+
+<ul>
+	<li>1 kilo de carne de cordero.</li>
+	<li>100 gramos de mantequilla de cacahuete .</li>
+	<li>2 cebolla.</li>
+	<li>4 zanahoria.</li>
+	<li>200 gramos de arroz.</li>
+	<li>5 tomates bien maduros.</li>
+	<li><mark>3 picante muy picante.</mark></li>
+	<li>1 kilo de carne.</li>
+</ul>
+<h3><p><font color="red">Modo de preparacion.</font></p></h1>
+<ul>
+	<li><i>Holla con agua.</i></i></li>
+	<li><i>meter todo los ingredientes.</i></li>
+	<li><i>20 gramos de sal.</i></li>
+	<li><i>vinagre de manzana.</i></li>
+	<li><i>27 gramos de aceite.</</li>
+	
+</ul>
+<cite><p><font color="green">Ndeya Mbaye.</font></p></h1></cite><br>
+
+<a href="https://es.wikipedia.org/wiki/Maafe/">ir a wikipedia</a><br>
+{% load static %}
+<img src="{% static "imagen_mafe.jpg" %}">
+
+
+</body>
+{% endblock content %}

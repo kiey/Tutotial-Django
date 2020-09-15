@@ -1,0 +1,17 @@
+sudo su postgres
+psql
+CREATE DATABASE capitulo_6_db;
+\c capitulo_6_db
+CREATE TABLE nota (
+  prioridad varchar(10) default NULL,
+  titulo varchar(50) default NULL,
+  contenido varchar(500) default NULL
+);
+
+CREATE USER capitulo_6_user WITH PASSWORD 'patata';
+ALTER ROLE capitulo_4_user SET client_encoding TO 'utf8';
+ALTER ROLE capitulo_4_user SET default_transaction_isolation TO 'read committed';
+ALTER ROLE capitulo_4_user SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE capitulo_6_db TO capitulo_6_user;
+
+ALTER TABLE nota OWNER TO capitulo_6_user;

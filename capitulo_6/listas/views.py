@@ -10,7 +10,7 @@ def vista_anadir(request):
     return(HttpResponse(f'Insertado <br> '
                         f'prioridad: {prioridad}<br>'
                         f'titulo: {titulo}<br>'
-                        f'nota: {nota}' ))
+                        f'nota: {nota}'))
 
     """
     

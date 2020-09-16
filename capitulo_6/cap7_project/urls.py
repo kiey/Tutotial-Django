@@ -19,6 +19,6 @@ from listas import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', views.vista_principal),
+    path('home', views.vista_principal, name='home'),
     path('anadir', views.vista_anadir),
 ]

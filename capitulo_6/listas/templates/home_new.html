@@ -4,13 +4,12 @@
     </head>
     <body>
     <h1>Notas</h1>
-
-    {% for nota in notas %}
-        <fieldset>
-            <legend>{{ nota.prioridad }} - {{ nota.titulo }}</legend>
-            {{ nota.contenido }} <br>
-        </fieldset>
-    {% endfor %}
+    <fieldset>
+        <legend>{{ nota.titulo }}</legend>
+        {{ nota.prioridad }} <br>
+        {{ nota.titulo }} <br>
+        {{ nota.contenido }} <br>
+    </fieldset>
     <form method="POST" action="/anadir">
         {% csrf_token %}
         <label for="id_prioridad">Prioridad:</label>

@@ -4,21 +4,30 @@
     </head>
     <body>
     <h1>Notas</h1>
-    <form method="GET" action="{% url 'home' %}">
+    <form method="GET" action="/notas">
         <label for="id_prioridad">Prioridad:</label>
-        <select id="id_prioridad" name="get_prioridad">
+        <select id="id_prioridad" name="prioridad">
                 <option value="todas">Todas</option>
                 <option value="alta">Alta</option>
                 <option value="normal">Normal</option>
                 <option value="baja">Baja</option>
         </select>
-        <input type="submit" value="filtrar">
+        <input type="submit" value="Filtrar">
     </form>
     {% for nota in notas %}
-        <fieldset>
-            <legend>{{ nota.prioridad }} - {{ nota.titulo }}</legend>
-            {{ nota.contenido }} <br>
-        </fieldset>
+        {% if get_prioridad and get_prioridad != "todas" %}
+            {% if nota.prioridad == get_prioridad %}
+                <fieldset>
+                    <legend>{{ nota.prioridad }} - {{ nota.titulo }}</legend>
+                    {{ nota.contenido }} <br>
+                </fieldset>
+            {% endif %}
+        {% else %}
+            <fieldset>
+                <legend>{{ nota.prioridad }} - {{ nota.titulo }}</legend>
+                {{ nota.contenido }} <br>
+            </fieldset>
+        {% endif %}
     {% endfor %}
     <form method="POST" action="/anadir">
         {% csrf_token %}
